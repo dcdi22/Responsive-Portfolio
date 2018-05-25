@@ -1,0 +1,253 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+  .wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/groovepaper2.png");
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-container, .heading {
+    max-width: 960px;
+    min-width: 150px;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.myName {
+    margin: 0;
+    padding: 20px 25px;
+    background-color: #007faa;
+    color: #fff;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 27px 0px;
+}
+
+li {
+    float: left;
+    padding-right: 20px;
+}
+
+.nav-div {
+    color: #939393;
+}
+
+a:link {
+    text-decoration: none;
+    color: #007faa;
+}
+a:visited {
+    color: #007faa;
+}
+a:hover:not(.active) {
+	color: #015470;
+}
+
+/* main */
+
+.main-section {
+    padding: 20px;
+}
+
+.main-container {
+    clear: both;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 25px;
+}
+
+.about-me {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    color: #007faa;
+    border-bottom: 2px solid #ccc;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+/* portfolio */
+
+.imagecontainer {
+    width: 274px;
+    margin: 20px 0 25px;
+    float: left;
+    position: relative;
+    margin-right: 40px;
+   
+}
+
+.tag {
+    width: 100%;
+    padding: 15px 0;
+    float: left;
+    position: absolute;
+    bottom: 15px;
+    background-color: #007faa;
+    color: #fff;
+    text-align: center;
+}
+
+.portimg {
+    width: 100%;
+    height: 200px;
+}
+
+
+/* form */
+
+/*I can't for the life of me figure out how to get the form to strech to the max-width*/
+form {
+    width: 100%;
+    display: block;
+}
+
+
+input, textarea {
+    font-size: 16px;
+    width: 96%;
+    padding: 10px 10px;
+    margin: 20px 0;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #007faa;
+    color: #fff;
+}
+
+/* footer */
+
+
+footer {
+    background-color: #666;
+    border-top: #007faa 6px solid;
+    color: #fff;
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.footer, .push {
+  height: 50px;
+}
+
+footer span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: .7em;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 980px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+/* I didn't have any styles to add to 980 or 768 as they already seemed to meet the requirements visually for homework */
+
+
+@media screen and (max-width: 640px) {
+
+    .imagecontainer {
+        
+        float: none;
+        position: relative;
+        /*margin: 15px 0 0 0;*/
+    }
+
+    .portimg {
+        width: 100%;
+    }
+
+    .tag {
+        width: 100%;
+    }
+
+    .avatar {
+        float: none;
+    }
+
+    h1 {
+        float: none;
+    }
+
+    .myName {
+        text-align: center;
+    }
+
+    ul {
+        margin:0;
+        padding:0;
+        list-style-type:none;
+        text-align:center;
+        float: none;
+    }
+
+    li {
+        display:inline-block;
+        padding: 10px;
+        float: none;
+    }
+    
+       
+}
+
+@media screen and (max-width: 414px) { 
+    
+    .imagecontainer {
+        width: 100%;
+    }
+
+
+}
